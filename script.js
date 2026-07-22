@@ -23,6 +23,23 @@ const runnerContainer = document.getElementById("runnerContainer");
 const runnerVideo = document.getElementById("runnerVideo");
 
 
+
+function playRunner(oldRect){
+
+    runnerContainer.style.display = "block";
+
+    runnerContainer.style.left = (oldRect.left - 20) + "px";
+    runnerContainer.style.top = (oldRect.top - 20) + "px";
+
+    runnerVideo.currentTime = 0;
+    runnerVideo.play();
+
+    runnerVideo.onended = () => {
+        runnerContainer.style.display = "none";
+    };
+}
+
+
 // Loading
 
 window.addEventListener("load",()=>{
