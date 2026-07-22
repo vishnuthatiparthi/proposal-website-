@@ -148,20 +148,14 @@ setTimeout(type,35);
 // Moving NO Button
 // =============================
 
-const funnyMessages=[
-
-"No 😭",
-
-"Try Again 😂",
-
-"Impossible ❤️",
-
-"Nice Try 😜",
-
-"You Can't Catch Me",
-
-"Think Again 🥺"
-
+const funnyMessages = [
+    "😂 Catch me!",
+    "😜 Nice Try!",
+    "❤️ Only YES!",
+    "🥺 Are you sure?",
+    "🤣 Too Slow!",
+    "😎 I'm Fast!",
+    "💨 Missed Again!"
 ];
 
 function playRunner(oldRect){
