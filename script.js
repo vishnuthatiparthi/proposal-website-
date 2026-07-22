@@ -164,30 +164,22 @@ const funnyMessages=[
 
 ];
 
-function moveButton(){
+function playRunner(oldRect){
 
-const maxX=window.innerWidth-200;
+    runnerContainer.style.display = "block";
 
-const maxY=window.innerHeight-100;
+    runnerContainer.style.left = (oldRect.left - 20) + "px";
+    runnerContainer.style.top = (oldRect.top - 20) + "px";
 
-const x=Math.random()*maxX;
+    runnerVideo.currentTime = 0;
+    runnerVideo.play();
 
-const y=Math.random()*maxY;
-
-noBtn.style.left=x+"px";
-
-noBtn.style.top=y+"px";
-
-noBtn.innerHTML=
-
-funnyMessages[Math.floor(Math.random()*funnyMessages.length)];
+    setTimeout(() => {
+        runnerVideo.pause();
+        runnerContainer.style.display = "none";
+    },700);
 
 }
-
-noBtn.addEventListener("mouseover",moveButton);
-
-noBtn.addEventListener("touchstart",moveButton);
-
 
 
 
