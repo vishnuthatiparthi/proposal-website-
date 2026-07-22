@@ -1,6 +1,8 @@
+
 /* ===========================
-   Google Font / Reset
+   Google Font
 =========================== */
+
 *{
     margin:0;
     padding:0;
@@ -12,222 +14,419 @@ html{
 }
 
 body{
+
     font-family:'Poppins',sans-serif;
+
     background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fad0ff);
+
     overflow-x:hidden;
+
     color:white;
+
 }
 
-/* Loading */
+
+/* ===========================
+Loading
+=========================== */
+
 #loading-screen{
+
     position:fixed;
+
     inset:0;
+
     background:#ff4d88;
+
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
+
     z-index:99999;
+
 }
 
 .heart-loader{
+
     font-size:80px;
+
     animation:beat .8s infinite;
+
 }
 
 @keyframes beat{
+
 0%{transform:scale(1);}
 50%{transform:scale(1.25);}
 100%{transform:scale(1);}
+
 }
 
-/* Sections */
+
+
+/* ===========================
+Sections
+=========================== */
+
 section{
+
     min-height:100vh;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
+
     flex-direction:column;
+
     padding:40px;
+
     text-align:center;
+
 }
 
-/* Welcome */
+
+/* ===========================
+Welcome
+=========================== */
+
 #welcome h1{
+
     font-size:60px;
+
     margin:20px 0;
+
     font-family:'Great Vibes',cursive;
+
 }
 
-#welcome h3{font-size:30px;}
+#welcome h3{
+
+    font-size:30px;
+
+}
 
 #welcome p{
+
     max-width:700px;
+
     line-height:1.8;
+
     font-size:20px;
+
 }
 
-/* Buttons */
+
+
+/* ===========================
+Button
+=========================== */
+
 button{
+
     margin-top:40px;
+
     padding:18px 40px;
+
     border:none;
+
     border-radius:50px;
+
     cursor:pointer;
+
     font-size:20px;
+
     font-weight:bold;
-    transition:transform .35s ease,box-shadow .35s ease;
+
+    transition:.35s;
+
 }
 
 button:hover{
+
     transform:scale(1.08);
-    box-shadow:0 12px 30px rgba(255,77,136,.45);
+
 }
 
 #beginBtn,#yesBtn{
+
     background:#ff2d55;
-    color:#fff;
+
+    color:white;
+
 }
 
 #noBtn{
-    background:#fff;
+
+    background:white;
+
     color:#ff2d55;
+
     position:absolute;
+
 }
 
-/* Letter */
+
+
+/* ===========================
+Letter
+=========================== */
+
 #letter{
-    background:#fff;
+
+    background:white;
+
     color:#444;
+
 }
 
 #letter h2{
+
     font-size:50px;
+
     margin-bottom:40px;
+
 }
 
 #typewriter{
+
     max-width:900px;
+
     font-size:24px;
+
     line-height:2;
+
 }
 
-/* Gallery */
+
+
+/* ===========================
+Gallery
+=========================== */
+
 #gallery{
+
     background:linear-gradient(135deg,#ff8fab,#ffc2d1);
+
 }
 
 .gallery-grid{
+
     margin-top:40px;
+
     display:grid;
+
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
     gap:25px;
+
     width:100%;
+
 }
 
 .gallery-grid img{
+
     width:100%;
-    height:350px;
-    object-fit:cover;
+
     border-radius:25px;
+
     box-shadow:0 20px 40px rgba(0,0,0,.25);
+
     transition:.4s;
+
 }
 
 .gallery-grid img:hover{
+
     transform:scale(1.05);
+
 }
 
-/* Proposal */
+
+
+/* ===========================
+Proposal
+=========================== */
+
 #proposal{
-    background:#141414;
-    position:relative;
-    overflow:hidden;
+
+background:#141414;
+
+position:relative;
+
 }
 
 #proposal h2{
-    font-size:70px;
-    margin-bottom:70px;
-    font-family:'Great Vibes',cursive;
+
+font-size:70px;
+
+margin-bottom:70px;
+
+font-family:'Great Vibes',cursive;
+
 }
 
 .buttons{
-    position:relative;
-    width:600px;
-    height:250px;
+
+position:relative;
+
+width:600px;
+
+height:250px;
+
 }
 
 #yesBtn{
-    position:absolute;
-    left:120px;
-    top:80px;
+
+position:absolute;
+
+left:120px;
+
+top:80px;
+
 }
 
 #noBtn{
-    left:360px;
-    top:80px;
+
+left:360px;
+
+top:80px;
+
 }
 
-/* Celebration */
+
+
+/* ===========================
+Celebration
+=========================== */
+
 #celebration{
-    background:linear-gradient(135deg,#ff4d88,#ff99cc);
+
+background:linear-gradient(135deg,#ff4d88,#ff99cc);
+
 }
 
 #celebration h1{
-    font-size:65px;
-    font-family:'Great Vibes',cursive;
+
+font-size:65px;
+
+font-family:'Great Vibes',cursive;
+
 }
 
 #celebration h2{
-    margin-top:20px;
-    font-size:40px;
+
+margin-top:20px;
+
+font-size:40px;
+
 }
 
 #celebration p{
-    margin-top:30px;
-    font-size:22px;
-    line-height:2;
-    max-width:900px;
+
+margin-top:30px;
+
+font-size:22px;
+
+line-height:2;
+
+max-width:900px;
+
 }
 
-/* Hearts */
+
+
+/* ===========================
+Floating Hearts
+=========================== */
+
 .heart{
-    position:fixed;
-    font-size:25px;
-    animation:float 8s linear infinite;
-    opacity:.8;
-    pointer-events:none;
+
+position:fixed;
+
+font-size:25px;
+
+animation:float 8s linear infinite;
+
+opacity:.8;
+
+pointer-events:none;
+
 }
 
 @keyframes float{
-0%{transform:translateY(100vh);opacity:0;}
-15%{opacity:1;}
-100%{transform:translateY(-120vh);opacity:0;}
+
+0%{
+
+transform:translateY(100vh);
+
+opacity:0;
+
 }
 
-/* Runner */
-#runnerContainer{
-    position:fixed;
-    display:none;
-    width:120px;
-    height:120px;
-    pointer-events:none;
-    z-index:99999;
+15%{
+
+opacity:1;
+
 }
 
-#runnerVideo{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius:20px;
+100%{
+
+transform:translateY(-120vh);
+
+opacity:0;
+
 }
 
-/* Responsive */
+}
+
+
+
+/* ===========================
+Responsive
+=========================== */
+
 @media(max-width:768px){
-#welcome h1{font-size:42px;}
-#proposal h2{font-size:48px;}
-.buttons{width:100%;}
-#yesBtn{left:10%;}
-#noBtn{left:60%;}
-.gallery-grid{grid-template-columns:1fr;}
+
+#welcome h1{
+
+font-size:42px;
+
+}
+
+#proposal h2{
+
+font-size:48px;
+
+}
+
+.buttons{
+
+width:100%;
+
+}
+
+#yesBtn{
+
+left:10%;
+
+}
+
+#noBtn{
+
+left:60%;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
 }
