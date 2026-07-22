@@ -19,6 +19,9 @@ const yesBtn = document.getElementById("yesBtn");
 
 const celebration = document.getElementById("celebration");
 
+const runnerContainer = document.getElementById("runnerContainer");
+const runnerVideo = document.getElementById("runnerVideo");
+
 
 // Loading
 
